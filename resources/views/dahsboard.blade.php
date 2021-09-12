@@ -38,6 +38,9 @@
                     <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                         <i class="fas fa-archway me-2"></i>Data Ruangan
                     </a>
+                    <a href="/user" class="list-group-item list-group-item-action bg-transparent second-text fw-bold ">
+                        <i class="fas fa-users me-2"></i>Users
+                    </a>
                 </div>
             </div>
             <!-- Side Bar End -->
@@ -45,10 +48,6 @@
             <div id="page-content-wrapper">
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                        <h2 class="fs-2 m-0">Dashboard</h2>
-                    </div>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="colapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -70,7 +69,7 @@
                     </div>
                 </nav>
                 <div class="container-fluid px-4">
-                    <h3>content here</h3>
+                    @yield('content')
                 </div>
             </div>
          </div>
