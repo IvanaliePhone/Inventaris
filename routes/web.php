@@ -19,6 +19,16 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dahsboard');
 });
+Route::get('/aturan', function () {
+    return view('aturan');
+});
 Route::get('/user', function () {
     return view('users');
 });
+Route::get('/dataruangan', function () {
+    return view('dataruangan');
+});
+Route::get('/databarang', function () {
+    return view('dataruangan');
+});
+
