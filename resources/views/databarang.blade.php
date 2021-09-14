@@ -1,218 +1,181 @@
-
 @extends('dahsboard')
+
 @section('content')
-<h1 class="h3 mb-5 fw-normal">Selamat datang diaturan inventaris!</h1>
-<div class="row">
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-500 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">No</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+<html>
+<head>
+	<style type="text/css">
+		/* Table */
+		body {
+			font-family: "lucida Sans Unicode", "Lucida Grande", "Segoe UI", vardana
+		}
+		.demo-table {
+			border-collapse: collapse;
+			font-size: 12px;
+		}
+		.demo-table th, 
+		.demo-table td {
+			padding: 7px 17px;
+		}
+		.demo-table .title {
+			caption-side: bottom;
+			margin-top: 12px;
+		}
+		.demo-table thead th:last-child,
+		.demo-table tfoot th:last-child,
+		.demo-table tbody td:last-child {
+			border: 0;
+		}
 
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">Kode lokasi</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-    
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kode barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+		/* Table Header */
+		.demo-table thead th {
+			border-right: 1px solid #c7ecc7;
+			text-transform: uppercase;
+		}
 
-     
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">merk barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+		/* Table Body */
+		.demo-table tbody td {
+			color: #353535;
+			border-right: 1px solid #c7ecc7;
+		}
+		.demo-table tbody tr:nth-child(odd) td {
+			background-color: #f4fff7;
+		}
+		.demo-table tbody tr:nth-child(even) td {
+			background-color: #dbffe5;
+		}
+		.demo-table tbody td:nth-child(4),
+		.demo-table tbody td:first-child,
+		.demo-table tbody td:last-child {
+			text-align: right;
+		}
+		.demo-table tbody tr:hover td {
+			background-color: #ffffa2;
+			border-color: #ffff0f;
+			transition: all .2s;
+		}
 
-     
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">bidang barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+		/* Table Footer */
+		.demo-table tfoot th {
+			border-right: 1px solid #c7ecc7;
+		}
+		.demo-table tfoot th:first-child {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+<p><h1 align ="center">Data Barang</h1></p>
+ <center>
+	<table class="demo-table">
+		<caption class="title"> Data Barang </caption>
+		<thead>
+			<tr>
+               <th style="width:20px">Nama barang</th>
+               <th style="width:20px">  barang</th>
+               <th style="width:20px"> bidang barang</th>
+               <th style="width:20px">lokasi</th>
+               <th style="width:20px"> tahun perolehan</th>
+               <th style="width:20px"> kelompok alat</th>
+               <th style="width:20px"> jumlah barang</th>
+               <th style="width:20px"> kondisi</th>
+               <th style="width:20px">  ket barang</th>
+               <th style="width:20px"> kode ruang</th>
 
-     
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">lokasi</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">tahun perolehan</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-    
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kelompok alat</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-    
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">jumlah barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-    
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kondisi barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">keterangan barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kode ruang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-
-
-
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+            <tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+            <tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+            <tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+            <tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+            <tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+            <tr>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+			</tr>
+			
+			
+		</tbody>
+		<tfoot>
+			
+		</tfoot>
+	</table>
+    </center>
+</body>
+</html>
 @endsection

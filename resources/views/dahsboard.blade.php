@@ -26,16 +26,16 @@
                 </div>
 
                 <div class="list-group list-group-flush my-3">
-                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <a href="/aturan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                         <i class="fas fa-tachometer-alt me-2"></i>Dashboard
                     </a>
-                    <a href="/aturan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <a href="aturan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                         <i class="fas fa-book me-2"></i>Aturan
                     </a>
-                    <a href="/dataruangan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                         <i class="fas fa-box me-2"></i>Data Barang
-                    </a>
                     <a href="/databarang" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                         <i class="fas fa-box me-2"></i>databarang
+                    </a>
+                    <a href="dataruangan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                         <i class="fas fa-archway me-2"></i>Data Ruangan
                     </a>
                     <a href="/user" class="list-group-item list-group-item-action bg-transparent second-text fw-bold ">

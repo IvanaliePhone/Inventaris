@@ -1,111 +1,65 @@
 @extends('dahsboard')
+
 @section('content')
-<h1 class="h3 mb-5 fw-normal">Selamat datang diaturan inventaris!</h1>
-<div class="row">
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">Kode bidang Barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+<html>
+<head>
+<title>Aturan membaca kode inventaris barang</title>
+</head>
+<body>
+<h1 align="center">Aturan membaca kode inventaris barang</h1>
+<table width="745" border="1" cellspacing="0" cellpadding="5" align="center">
+<tr align="center" bgcolor="#66CC33">
+<td width="174">KOTAK</td>
+<td width="353">KODE</td>
+<td width="232">KETERANGAN</td>
+</tr>
+<tr>
+<td>Kotak 1</td>
+<td>Kode Bidang Barang</td>
+<td>1 Barang umum</td>
+<td>1 Barang Alat Lab</td>
+<td>1 Barang koperasi</td>
+<td>1 Barang umum</td>
+</tr>
 
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">Kode lokasi</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
-    
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kode tahun perolehan</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+<tr>
+<td>Kotak 2, 3, & 4</td>
+<td>Kode lokasi</td>
+<td></td>
+</tr>
 
-     
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kode kelompok alat</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+<tr>
+<td>Kotak 5 & 6</td>
+<td>Kode tahun perolehan</td>
+<td></td>
+</tr>
 
-     
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-300 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kode nama barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+<tr>
+<td>Kotak 7</td>
+<td>Kode kelompok alat</td>
+<td>1 member</td>
+</tr>
 
-     
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="" class="text-decoration-none">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-mr-2">
-                        <div class="h3 fw-bold text-primary text-uppercase mb-4">kode urutan barang</i></div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas-fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </div>
+<tr>
+<td>Kotak 8, 9 & 10</td>
+<td>Kode nama barang</td>
+<td></td>
+</tr>
 
+<tr>
+<td>Alamat</td>
+<td>Jl. Raya Labuan Maja - Pandeglang</td>
+</tr>
+<tr>
 
+<td>Pekerjaan</td>
+<td>Guru Produktif</td>
+</tr>
+<tr>
+<td>Hobi</td>
+<td>Ngoding</td>
+</tr>
+</table>
+</body>
 @endsection
+
