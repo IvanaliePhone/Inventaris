@@ -31,4 +31,6 @@ Route::get('/dataruangan', function () {
 Route::get('/databarang', function () {
     return view('dataruangan');
 });
-
+Route::get('/tambahdata', function () {
+    return view('/form/tambahdata');
+});

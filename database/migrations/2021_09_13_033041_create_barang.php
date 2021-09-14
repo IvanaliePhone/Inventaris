@@ -14,7 +14,8 @@ class CreateBarang extends Migration
     public function up()
     {
         Schema::create('barang', function (Blueprint $table) {
-            $table->increments('kode_brg');
+            $table->increments('no');
+            $table->integer('kode_brg');
             $table->string('nama_brg');
             $table->string('merk_brg');
             $table->string('bidang_brg');
@@ -26,7 +27,7 @@ class CreateBarang extends Migration
             $table->string('kondisi_brg');
             $table->string('sumber_dana');
             $table->string('ket_brg');
-            $table->string('kode_ruang');
+            $table->string('kode_lokasi');
             $table->timestamps();
         });
     }

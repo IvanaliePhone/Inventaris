@@ -14,60 +14,94 @@
         <link href="{{ asset('asset/style.css') }}" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+        <!-- js -->
+        <script src="js/app.js"></script>
 
     <body>
         <div class="d-flex" id="wrapper">
 
             <!-- Side Bar -->
-            <div class="bg-white" id="sidebar-wrapper">
+            <div  id="sidebar-wrapper">
                 <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-                    <i class="fas fa-user-secret me-2"></i>Inventaris 
+                    <i class="fas fa-user-secret me-4"></i>Inventaris 
                 </div>
 
                 <div class="list-group list-group-flush my-3">
+                <ul class="list-group">
+                    <li class="nav-item">
                     <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                        <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                        <i class="fas fa-tachometer-alt me-3"></i>Dashboard
                     </a>
+                    </li>
+                    <li class="nav-item"> 
                     <a href="/aturan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                        <i class="fas fa-book me-2"></i>Aturan
+                        <i class="fas fa-plus me-3"></i>Tambah Data
                     </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/aturan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fas fa-book me-3"></i>Aturan
+                    </a>
+                    </li>
+                    <li class="nav-item">
                     <a href="/dataruangan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                         <i class="fas fa-box me-2"></i>Data Barang
+                         <i class="fas fa-box me-3"></i>Data Barang
                     </a>
+                    </li>
+                    <li class="nav-item">
                     <a href="/databarang" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                        <i class="fas fa-archway me-2"></i>Data Ruangan
+                        <i class="fas fa-archway me-3"></i>Data Ruangan
                     </a>
-                    <a href="/user" class="list-group-item list-group-item-action bg-transparent second-text fw-bold ">
-                        <i class="fas fa-users me-2"></i>Users
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a href="/user" class="nav-link dropdown-toggle second-text fw-bold" id="navbar-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-users me-3"></i>Users
                     </a>
+                    <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Super Admin</a>
+                     <a class="dropdown-item" href="#">Admin</a>
+                     <div class="dropdown-devider"></div>
+                     <a class="dropdown-item" href="#">User</a>
+                    
+                    </div>
+                   
+                    </li>
+                </ul>
+
                 </div>
             </div>
             <!-- Side Bar End -->
             
-            <div id="page-content-wrapper">
+            
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <nav id="navbar ">
+                        <button class="nav-toggle" >
+                            <span class="bar-top openbtn" onclick="openNav()"></span>
+                            <span class="bar-mid"></span>
+                            <span class="bar-bot" onclick="closeNav()"></span>
+                        </button>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="colapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-colapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item-dropdown">
-                                <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   login
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a href="#" class="dropdown-item">Profil</li></a>
-                                    <li><a href="#" class="dropdown-item">Settings</li></a>
-                                    <li><a href="#" class="dropdown-item">Logout</li></a>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
                 </nav>
+                    <script>
+                    (function () {
+                        var toggle = document.querySelector('.nav-toggle');
+  
+                         toggle.addEventListener('click', function(e) {
+                          this.classList.toggle('opened');
+                        });   
+                        })();
+                        function openNav() {
+    document.getElementById("navbar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("navbar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+                    </script>
+                
                 <div class="container-fluid px-4">
                     @yield('content')
                 </div>
