@@ -65,6 +65,7 @@
 </head>
 <body>
 <p><h1 align ="center">Data ruangan</h1></p>
+<canetr
 	<table class="demo-table">
 		<caption class="title"> Data Ruangan </caption>
 		<thead>

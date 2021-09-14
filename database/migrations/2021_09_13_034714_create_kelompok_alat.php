@@ -4,19 +4,18 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBidangBarang extends Migration
+class CreateKelompokAlat extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-
     public function up()
     {
-       Schema::create('bidang_barang', function (Blueprint $table) {
-            $table->increments('kode_bidang_brg');
-            $table->string('bidang_brg');
+        Schema::create('klmpk_alat', function (Blueprint $table) {
+            $table->increments('kode_klmpk_alat');
+            $table->string('klmpk_alat');
         
          
         });
@@ -29,6 +28,6 @@ class CreateBidangBarang extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bidang_barang');
+        Schema::dropIfExists('klmpk_alat');
     }
 }
