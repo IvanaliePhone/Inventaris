@@ -70,7 +70,7 @@
                     </a>
                     </li>
                     <li class="nav-item"> 
-                    <a href="/form/tambahdata" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <a href="form/tambahdata" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                         <i class="fas fa-plus me-3"></i>Tambah Data
                     </a>
                     </li>

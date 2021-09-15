@@ -3,12 +3,79 @@
 @section('content')
 <html>
 <head>
-<title>Aturan membaca kode inventaris barang</title>
+<h1 align="center">Aturan Membaca Kode Inventaris Barang</h1><br>
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    max-width: 1100px;
+}
+.container .kotak{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    background:	#aaa1a1;
+    margin:0 20px;
+
+}
+        
+ </style>
 </head>
+
 <body>
-<h1 align="center">Aturan membaca kode inventaris barang</h1>
+        <div class="container">
+        <div class="kotak">
+            <h2>1</h2>
+        </div>
+        <div class="kotak">
+            <h2>2</h2>
+        </div>
+
+        <div class="kotak">
+            <h2>3</h2>
+        </div>
+        <div class="kotak">
+            <h2>4</h2>
+        </div>
+        <div class="kotak">
+            <h2>5</h2>
+        </div>
+        <div class="kotak">
+            <h2>6</h2>
+        </div>
+        <div class="kotak">
+            <h2>7</h2>
+        </div>
+        <div class="kotak">
+            <h2>8</h2>
+        </div>
+        <div class="kotak">
+            <h2>9</h2>
+        </div>
+        <div class="kotak">
+            <h2>10</h2>
+        </div>
+        <div class="kotak">
+            <h2>11</h2>
+        </div>
+        <div class="kotak">
+            <h2>12</h2>
+        </div>
+
+        
+       
+</div> 
+<center>
+<br>
 <table width="745" border="1" cellspacing="0" cellpadding="5" align="center">
-<tr align="center" bgcolor="#66CC33">
+<tr align="center" bgcolor="#35a9db">
 <td width="174">KOTAK</td>
 <td width="353">KODE</td>
 <td width="232">KETERANGAN</td>
@@ -16,10 +83,15 @@
 <tr>
 <td>Kotak 1</td>
 <td>Kode Bidang Barang</td>
-<td>1 Barang umum</td>
-<td>1 Barang Alat Lab</td>
-<td>1 Barang koperasi</td>
-<td>1 Barang umum</td>
+<td>1 Barang umum<br>
+    2 Barang Alat Lab<br>
+    3 Barang Koperasi<br>
+    4 Barang UKS<br>
+    5 Barang TU<br>
+    6 Barang Ruang Guru<br>
+    7 Barang Ruang Perpustakaan<br>
+    8 Barang Ruang Satpam
+</td>
 </tr>
 
 <tr>
@@ -37,7 +109,14 @@
 <tr>
 <td>Kotak 7</td>
 <td>Kode kelompok alat</td>
-<td>1 member</td>
+<td>1 Member<br>
+    2 Elektronik<br>
+    3 Alat Ukur<br>
+    4 Alat Praktek<br>
+    5 Alat Trainer<br>
+    6 Alat Musik<br>
+    7 Kendaraan<br>
+</td>
 </tr>
 
 <tr>
@@ -47,19 +126,16 @@
 </tr>
 
 <tr>
-<td>Alamat</td>
-<td>Jl. Raya Labuan Maja - Pandeglang</td>
+<td>Kotak 11 & 12</td>
+<td>kode urutan barang	
+</td>
+<td></td>
 </tr>
-<tr>
 
-<td>Pekerjaan</td>
-<td>Guru Produktif</td>
-</tr>
-<tr>
-<td>Hobi</td>
-<td>Ngoding</td>
-</tr>
-</table>
+</table><br>
 </body>
-@endsection
 
+
+
+
+@endsection
