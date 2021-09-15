@@ -32,5 +32,5 @@ Route::get('/aturan', function () {
     return view('aturan');
 });
 Route::get('/form/tambahdata', function () {
-    return view('/form/tambahdata');
+    return view('form/tambahdata');
 });
