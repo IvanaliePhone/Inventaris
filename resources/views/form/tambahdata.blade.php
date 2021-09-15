@@ -17,6 +17,14 @@
   <div class="mb-3">
     <label for="kodelokasi" class="form-label">Kode Lokasi</label>
       <select id="kodelokasi" class="form-select">
+        <!-- <optgroup label="ayam">
+            <option value="">goreng</option>
+            <option value="">kuah</option>
+        </optgroup>
+        <optgroup label="ayam">
+            <option value="">goreng</option>
+            <option value="">kuah</option>
+        </optgroup> -->
         <option>-</option>
         <option>-</option>
         <option>-</option>

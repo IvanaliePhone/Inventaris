@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
 :root {
     --main-bg-color:#1687e4;
     --main-text-color: #1687e4;
@@ -80,7 +86,7 @@
 #sidebar-wrapper .sidebar-heading{
     color:darkorange;
 }
-nav {
+/* nav {
     display:inline-block;
     width:20px;
     height:20px;
@@ -108,28 +114,28 @@ nav {
     -webkit-transition: .2s ease all;
             transition: .2s ease all;
     
-    /* 
+    
      * ENLARGED FOR PRESENTATION
      * Keep these values at the same proportion 
      * for it to look correct
-    */
+   
     border-radius: 8px;
     height: 8px;
     width: 100px;
     margin-bottom: 16px;
     
-    /*
+    
      * Practical values:
      * border-radius: 2px;
      * height: 2px;
      * width: 25px;
      * margin-bottom: 4px;
-    */
+   
   }
   
   .nav-toggle .bar-bot {
     margin-bottom: 0;
-  }
+  } */
   
   .opened .bar-top {
     -webkit-transform: rotate(45deg);
