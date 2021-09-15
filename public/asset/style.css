@@ -1,8 +1,8 @@
 :root {
     --main-bg-color:#1687e4;
     --main-text-color: #1687e4;
-    --second-text-color:#bbbec5;
-    --second-bg-color:#c1efde;
+    --second-text-color:#a4aec4;
+    --second-bg-color:#023853;
 }
 .primary-text{
     color:var(--main-text-color);
@@ -22,12 +22,17 @@
 }
 #wrapper{
     overflow-x: hidden;
-    background-image: linear-gradient(to right, #bacef3, #c2dcf5, #cbe0f7, #d4e1f8, #dde9fa);
+    background:rgb(235, 233, 233);
 }
 #sidebar-wrapper{
+    background:#023853;
     min-height: 100vh;
     margin-left: -15rem;
+    line-height:3em;
+    /* box-shadow: 50px #77c9dd; */
     transition: margin 0.25s ease-out;
+    
+    
 }
 #sidebar-wrapper .sidebar-heading{
     padding: 0.875rem 1.25rem;
@@ -45,11 +50,104 @@
 #menu-toggle{
     cursor:pointer;
 }
-.list-group-item{
-    border:none;
-    padding: 20px 30px;
+.dropdown:hover>.dropdown-menu{
+    display:flex;
+    background:black;
 }
-@media (min-width: 760px) {
+.list-group a{
+    color:rgb(207, 193, 176);
+}
+.list-group a:hover{
+    color:rgb(235, 140, 25);
+}
+.list-group a i{
+    color:rgb(54, 107, 148);
+}
+.list-group li{
+    border:none;
+    padding: 10px 0px;
+
+}
+.list-group-item{
+    color:rgb(196, 182, 169);
+}
+.list-group-item:hover {
+    color:#ff4500;
+}
+.list-group-flush i{
+    color:black;
+}
+#sidebar-wrapper .sidebar-heading{
+    color:darkorange;
+}
+nav {
+    display:inline-block;
+    width:20px;
+    height:20px;
+  }
+ 
+  .nav-toggle {
+     
+    position: relative;
+    padding: 3px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 7px 0;
+
+  }
+  
+  .nav-toggle:focus {
+    outline-width: 0;
+  }
+  
+  .nav-toggle [class*='bar-'] {
+    background: darkorange;
+    display: block;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+            transition: .2s ease all;
+    
+    /* 
+     * ENLARGED FOR PRESENTATION
+     * Keep these values at the same proportion 
+     * for it to look correct
+    */
+    border-radius: 8px;
+    height: 8px;
+    width: 100px;
+    margin-bottom: 16px;
+    
+    /*
+     * Practical values:
+     * border-radius: 2px;
+     * height: 2px;
+     * width: 25px;
+     * margin-bottom: 4px;
+    */
+  }
+  
+  .nav-toggle .bar-bot {
+    margin-bottom: 0;
+  }
+  
+  .opened .bar-top {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 15% 15%;
+            transform-origin: 15% 15%;
+  }
+  .opened .bar-mid {
+    opacity: 0;
+  }
+  .opened .bar-bot {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 15% 95%;
+            transform-origin: 15% 95%;
+  }
+  
+    @media (min-width: 760px) {
     #sidebar-wrapper{
         margin-left: 0;
     }
