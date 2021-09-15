@@ -31,6 +31,6 @@ Route::get('/dataruangan', function () {
 Route::get('/aturan', function () {
     return view('aturan');
 });
-Route::get('/tambahdata', function () {
+Route::get('/form/tambahdata', function () {
     return view('/form/tambahdata');
 });

@@ -35,7 +35,7 @@
                     </a>
                     </li>
                     <li class="nav-item"> 
-                    <a href="form/tambahdata" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <a href="/form/tambahdata" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                         <i class="fas fa-plus me-3"></i>Tambah Data
                     </a>
                     </li>
@@ -76,7 +76,7 @@
             
             
 
-                <nav id="navbar ">
+                <!-- <nav id="navbar ">
                         <button class="nav-toggle" >
                             <span class="bar-top openbtn" onclick="openNav()"></span>
                             <span class="bar-mid"></span>
@@ -103,7 +103,7 @@
     document.getElementById("main").style.marginLeft = "0";
   }
                     </script>
-                
+                 -->
                 <div class="container-fluid px-4">
                     @yield('content')
                 </div>
