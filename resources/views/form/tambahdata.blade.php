@@ -1,6 +1,5 @@
 @extends('dahsboard')
 @section('content')
-<<<<<<< HEAD
 <div class="container">
 <div class="card text mt-3 ml-5">
   <div class="card-header fw-bold">
@@ -15,6 +14,15 @@
         <option>-</option>
         <option>-</option>
       </select>
+    </div>
+    <div class="mb-3">
+    <label for="gedung" class="form-label">Gedung</label>
+      <select id="gedung" class="form-select">
+        <option>-</option>
+        <option>-</option>
+        <option>-</option>
+      </select>
+    </div>
   <div class="mb-3">
     <label for="kodelokasi" class="form-label">Kode Lokasi</label>
       <select id="kodelokasi" class="form-select">
@@ -59,15 +67,31 @@
     <label for="tanggalmasuk" class="form-label">Tanggal Masuk</label>
     <input type="date" class="form-control" id="tanggalmasuk">
   </div>
-=======
-<div id="form">
-    <form action="" method="POST">
-   
-    </form>
+  <div class="mb-3">
+    <label for="kondisibarang" class="form-label">Kondisi Barang</label>
+    <input type="text" class="form-control" id="kondisibarang" >
+  </div>
+  <div class="mb-3">
+    <label for="sumberdana" class="form-label">Sumber Dana</label>
+    <input type="text" class="form-control" id="sumberdana" >
+  </div>
+  <div class="mb-3">
+    <label for="ketbarang" class="form-label">Keterangan Barang</label>
+    <input type="text" class="form-control" id="ketbarang" >
+  </div>
 
->>>>>>> c529663f93f9482853570c8a8339bab65ea42355
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+    <label class="form-check-label" for="exampleCheck1">Konfirmasi penambahan barang</label>
+  </div>
 
+</form>
+  <div class="card-footer text-muted">
+  <button type="submit" class="btn btn-primary">Kirim</button>
+  </div>
 </div>
+</div>
+
 
 
 

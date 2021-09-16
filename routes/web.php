@@ -31,6 +31,14 @@ Route::get('/dataruangan', function () {
 Route::get('/aturan', function () {
     return view('aturan');
 });
-Route::get('/form/tambahdata', function () {
+Route::get('/tambahdata', function () {
     return view('form/tambahdata');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
