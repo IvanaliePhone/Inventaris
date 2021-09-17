@@ -32,9 +32,11 @@ Route::get('/aturan', function () {
     return view('aturan');
 });
 Route::get('/tambahdata', function () {
-    return view('form/tambahdata');
+    return view('/form/tambahdata');
 });
-
+Route::get('/dashboards', function () {
+    return view('/dashboard');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -64,10 +64,8 @@
 	</style>
 </head>
 <body>
-<p><h1 align ="center">Data Barang</h1></p>
- <center>
+<center><h1><i class="fas fa-box me-3">DATA BARANG</h1></i>
 	<table class="demo-table">
-		<caption class="title"> Data Barang </caption>
 		<thead>
 			<tr>
                <th style="width:20px">Nama barang</th>
