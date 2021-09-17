@@ -33,7 +33,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Register</a>
+          <a class="nav-link active" aria-current="page" href="/register">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Login</a>
@@ -69,70 +69,63 @@
   }
   
   
-             function closeNav() {
+            function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
             document.getElementById("navbar").style.marginLeft = "0";
   }
             </script>
             <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <ul class="list-group">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="list-group">
               
               <img src="../pictures/bn-logo.jpg" alt="" id="logo">
               <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                      SMK BAGIMU NEGERIKU
-              </a>
+          </a>
             
               <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                Inventaris BN
-              </a>
+          </a>
               
               <li class="nav-item">
-              <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+              <a href="/dashboards" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                   <i class="fas fa-tachometer-alt me-3"></i>Dashboard
-              </a>
-              </li>
+          </a>
+          </li>
               <li class="nav-item"> 
               <a href="/tambahdata" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                   <i class="fas fa-plus me-3"></i>Tambah Data
-              </a>
-              </li>
+          </a>
+          </li>
               <li class="nav-item">
               <a href="/aturan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                   <i class="fas fa-book me-3"></i>Aturan
-              </a>
-              </li>
+          </a>
+          </li>
               <li class="nav-item">
               <a href="/databarang" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                    <i class="fas fa-box me-3"></i>Data Barang
-              </a>
-              </li>
+          </a>
+          </li>
               <li class="nav-item">
               <a href="/dataruangan" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                   <i class="fas fa-archway me-3"></i>Data Ruangan
-
-              </a>
-              </li>
+          </a>
+          </li>
               <li class="nav-item dropdown">
               <a href="/user" class="nav-link dropdown-toggle second-text fw-bold" id="navbar-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-users me-3"></i>Users
-              </a>
-              <div class="dropdown-menu">
+          </a>
+               <div class="dropdown-menu">
                <a class="dropdown-item fs-6" href="#">Super Admin</a>
                <a class="dropdown-item fs-6" href="#">Admin</a>
                <div class="dropdown-devider"></div>
                <a class="dropdown-item fs-6" href="#">User</a>
-              
               </div>
-             
-              </li>
+             </li>
           </ul>
-</div>
-
-
-  
-
+      </div>
             <!-- Side Bar End -->
                 <div class="container-fluid px-4">
                 <div id="main">

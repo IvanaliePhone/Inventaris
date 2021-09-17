@@ -3,7 +3,7 @@
 <div class="container">
 <div class="card text mt-3 ml-5">
   <div class="card-header fw-bold">
-    <h2>Tambah Data Barang</h1>
+  <h1><i class="fas fa-plus me-3"></i>Tambah Data Barang</h1>
   </div>
   <div class="card-body">
   <form>
@@ -84,15 +84,10 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
     <label class="form-check-label" for="exampleCheck1">Konfirmasi penambahan barang</label>
   </div>
-
-</form>
+  </form>
   <div class="card-footer text-muted">
   <button type="submit" class="btn btn-primary">Kirim</button>
   </div>
 </div>
 </div>
-
-
-
-
 @endsection
