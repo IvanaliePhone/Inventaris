@@ -31,6 +31,5 @@ Route::get('/dataruangan', function () {
 Route::get('/aturan', function () {
     return view('aturan');
 });
-Route::get('/form/tambahdata', function () {
-    return view('/form/tambahdata');
-});
+Route::get('/form/tambahdata', 'DataBarangnController@index')->name('tampiltambah');
+Route::post('/tambahdata/tambah', 'DataBarangnController@store');
