@@ -1,6 +1,6 @@
 @extends('dahsboard')
 @section('content')
-<div class="container">
+<div class="container col-md-9 col-xs-12 ">
 <div class="card text mt-3 ml-5">
   <div class="card-header fw-bold">
     <h2>Tambah Data Barang</h1>
