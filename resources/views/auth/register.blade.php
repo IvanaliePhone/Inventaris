@@ -67,6 +67,38 @@
                                     {{ __('Register') }}
                                 </button>
                             </div>
+                            <div class="form-group row{{$errors->has'(level') ? 'has-error' :null}}">
+                            <label for="level" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                            <!-- <div class="form-group row{{$errors->has'(level') ? 'has-error' :null}}">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Level') }}</label>
+
+                            <div class="col-md-6">
+                               <select name="level" id="" class="form-control">
+                                   <option value="" hidden selected>--Pilih Level--</option>
+                                   <option value="super_admin">Super Admin</option>
+                                   <option value="admin">Admin</option>
+                                   <option value="users">Users</option>
+                               </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
+                            </div> -->
                         </div>
                     </form>
                 </div>
