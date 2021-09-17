@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -17,13 +16,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- js -->
         <script src="js/app.js"></script>
-<<<<<<<< HEAD:resources/views/dashboard.blade.php
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-========
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
->>>>>>>> bf2032805835fd73c145537501744f2c99a250c7:resources/views/dahsboard.blade.php
     <body>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
@@ -57,8 +52,8 @@
         </li>
        
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="d-flex" action='databarang/cari'>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name='cari'>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
@@ -95,7 +90,7 @@
           </a>
               
               <li class="nav-item">
-              <a href="/dashboards" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+              <a href="/dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
                   <i class="fas fa-tachometer-alt me-3"></i>Dashboard
           </a>
           </li>
@@ -143,30 +138,3 @@
          </div>
     </body>
 </html>
-=======
-@extends('dahsboard')
-
-@section('content')
-<div class="card">
-  <div class="card-header">
-   Barang Baru Masuk
-  </div>
-  <div class="card-body">
-    <p class="card-text">meja dengan jumlah 23 di ruang bk</p>
-    <a href=""><p class="card-text">lihat detail<i class="fas 
-    fa-angle-double-right ml-2"></i></p></a>
-  </div>
-</div>
-<br>
-  <div class="card">
-  <div class="card-header">
-   Barang Baru Masuk
-  </div>
-  <div class="card-body">
-    <p class="card-text">meja dengan jumlah 23 di ruang bk</p>
-    <a href=""><p class="card-text">lihat detail<i class="fas 
-    fa-angle-double-right ml-2"></i></p></a>
-  </div>
-
-@endsection
->>>>>>> bf2032805835fd73c145537501744f2c99a250c7

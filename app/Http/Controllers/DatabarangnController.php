@@ -10,8 +10,17 @@ class DatabarangnController extends Controller
     public function index(){
         $kelompokalat = DB::table('klmpk_alat')->get();
         $lokasi = DB::table('lokasi')->get();
+        $barang = DB::table('barang')->get();
 
-        return view('form.tambahdata', compact('kelompokalat','lokasi'));
+        return view('databarang', compact('kelompokalat','lokasi','barang'));
+    }
+
+    public function tambah(){
+        $kelompokalat = DB::table('klmpk_alat')->get();
+        $lokasi = DB::table('lokasi')->get();
+        $barang = DB::table('barang')->get();
+
+        return view('form.tambahdata', compact('kelompokalat','lokasi','barang'));
     }
 
     public function store(Request $req){
@@ -37,5 +46,18 @@ class DatabarangnController extends Controller
 
         $insert = DB::table('barang')->insert(['no' => $kode, 'kode_brg' => $knb, 'nama_brg' => $nb, 'merk_brg' => $merk, "kondisi_brg" => $kb, "sumber_dana" => $sd,"ket_brg"=>$ket,'klmpk_alat'=>$kkl,]);
         return redirect()->route('tampiltambah');
+    }
+    public function barang(Request $request)
+    {
+        $search = $request->input('cari');
+        $data_barang = DB::table('barang')->get();
+        if($search){ 
+         $data_barang =DB::table('barang')->where("nama_brg","LIKE","%$search%")->get();
+         }
+         else{
+         $data_barang = DB::table('barang')->get();
+         }
+        return view('databarang',['barang' => $data_barang]);
+        echo $search;
     }
 }

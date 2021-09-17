@@ -64,116 +64,36 @@
 	</style>
 </head>
 <body>
-<center><h1><i class="fas fa-box me-3">DATA BARANG</h1></i>
-	<table class="demo-table">
-		<thead>
-			<tr>
-               <th style="width:20px">Nama barang</th>
-               <th style="width:20px">  barang</th>
-               <th style="width:20px"> bidang barang</th>
-               <th style="width:20px">lokasi</th>
-               <th style="width:20px"> tahun perolehan</th>
-               <th style="width:20px"> kelompok alat</th>
-               <th style="width:20px"> jumlah barang</th>
-               <th style="width:20px"> kondisi</th>
-               <th style="width:20px">  ket barang</th>
-               <th style="width:20px"> kode ruang</th>
-
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-            <tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-            <tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-            <tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-            <tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-            <tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-            <tr>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-				<td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-			</tr>
-			
-			
-		</tbody>
-		<tfoot>
-			
-		</tfoot>
-	</table>
-    </center>
+<center><p><h1><i class="fas fa-archway me-3"></i>DATA BARANG</h1></p>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<center>
+  <table class="table caption-top">
+    <thead>
+    <tr>
+      <th scope="col">Kode Inventaris</th>
+      <th scope="col">Nama Barang</th>
+      <th scope="col">Kode Barang</th>
+      <th scope="col">Merek Barang</th>
+	  <th scope="col">Kondisi Barang</th>
+	  <th scope="col">Sumber Dana</th>
+	  <th scope="col">Keterangan Barang</th>
+    </tr>
+  </thead>
+  <tbody>
+	@foreach($barang as $barangs)
+	<tr>
+      <td>{{$barangs->no}}</td>
+      <td>{{$barangs->nama_brg}}</td>
+      <td>{{$barangs->kode_brg}}</td>
+      <td>{{$barangs->merk_brg}}</td>
+	  <td>{{$barangs->kondisi_brg}}</td>
+      <td>{{$barangs->sumber_dana}}</td>
+      <td>{{$barangs->ket_brg}}</td>
+    </tr>
+	@endforeach
+    
+  </tbody>
+</table>
 </body>
 </html>
 @endsection

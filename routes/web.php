@@ -17,35 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dash');
 });
 Route::get('/user', function () {
     return view('users');
 });
-Route::get('/databarang', function () {
-    return view('databarang');
-});
+Route::get('/databarang', "DatabarangnController@index");
+
 Route::get('/dataruangan', function () {
     return view('dataruangan');
 });
 Route::get('/aturan', function () {
     return view('aturan');
 });
-<<<<<<< HEAD
-Route::get('/form/tambahdata', 'DataBarangnController@index')->name('tampiltambah');
-Route::post('/tambahdata/tambah', 'DataBarangnController@store');
-=======
-Route::get('/tambahdata', function () {
-    return view('/form/tambahdata');
-});
-Route::get('/dashboards', function () {
-    return view('/dashboard');
-});
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> bf2032805835fd73c145537501744f2c99a250c7
+ Route::get('/tambahdata', 'DataBarangnController@tambah');
+ Route::post('/tambahdata/tambah', 'DataBarangnController@store');
+ Route::get('/databarang/cari', 'DataBarangnController@barang');
