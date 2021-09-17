@@ -5,7 +5,7 @@
 <div class="container">
 <div class="card text mt-3 ml-5">
   <div class="card-header fw-bold">
-    <h2>Tambah Data Barang</h1>
+  <h1><i class="fas fa-plus me-3"></i>Tambah Data Barang</h1>
   </div>
   <div class="card-body">
   <form action='/tambahdata/tambah' method='POST'>
@@ -22,6 +22,15 @@
         <option value='7'>Barang Koperasi</option>
         <option value='8'>Barang Ruang Satpam</option>
       </select>
+    </div>
+    <div class="mb-3">
+    <label for="gedung" class="form-label">Gedung</label>
+      <select id="gedung" class="form-select">
+        <option>-</option>
+        <option>-</option>
+        <option>-</option>
+      </select>
+    </div>
   <div class="mb-3">
     <label for="kodelokasi" class="form-label">Kode Lokasi</label>
     <select id="kodelokasi" class="form-select" name='kodelokasi' required>
@@ -55,7 +64,6 @@
     <label for="tanggalmasuk" class="form-label">Tanggal Masuk</label>
     <input type="date" class="form-control" id="tanggalmasuk" name='tanggal' required>
   </div>
-
   <div class="mb-3">
     <label for="kondisibarang" class="form-label">Kondisi Barang</label>
     <input type="text" class="form-control" id="kondisibarang" name='kondisi' required>
@@ -68,7 +76,7 @@
     <label for="ketbarang" class="form-label">Keterangan Barang</label>
     <input type="text" class="form-control" id="ketbarang" name="ketbarang" required>
   </div>
-    
+
   <div class="mb-3 form-check">
   </div>
   
@@ -79,6 +87,4 @@
   </form>
 </div>
 </div>
-
-
 @endsection

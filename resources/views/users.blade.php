@@ -1,7 +1,8 @@
 @extends('dashboard')
 
 @section('content')
-<h1 class="h3 mb-5 fw-normal">Selamat datang Admin!</h1>
+<center>><h1> <i class="fas fa-users me-3"></i>Selamat Datang Admin</h1>
+<br>
 <div class="row">
     <div class="col-xl-3 col-md-6 mb-4">
         <a href="" class="text-decoration-none">
@@ -56,4 +57,5 @@
         </div>
         </a>
     </div>
+<center>
 @endsection

@@ -31,5 +31,21 @@ Route::get('/dataruangan', function () {
 Route::get('/aturan', function () {
     return view('aturan');
 });
+<<<<<<< HEAD
 Route::get('/form/tambahdata', 'DataBarangnController@index')->name('tampiltambah');
 Route::post('/tambahdata/tambah', 'DataBarangnController@store');
+=======
+Route::get('/tambahdata', function () {
+    return view('/form/tambahdata');
+});
+Route::get('/dashboards', function () {
+    return view('/dashboard');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> bf2032805835fd73c145537501744f2c99a250c7
