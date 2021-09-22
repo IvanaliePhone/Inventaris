@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dahsboard');
 });
-Route::get('/user', function () {
+Route::get('/users', function () {
     return view('users');
 });
 Route::get('/databarang', function () {
@@ -43,15 +43,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/user', 'UserController@index')->name('user');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'AdminController@index')->name('admin');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/superadmin', 'SuperadminController@index')->name('superadmin');
 
 Auth::routes();
 
