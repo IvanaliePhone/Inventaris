@@ -1,4 +1,4 @@
-@extends('dahsboard')
+@extends('dashboard')
 
 @section('content')
 <center>><h1> <i class="fas fa-users me-3"></i>Selamat Datang Admin</h1>
