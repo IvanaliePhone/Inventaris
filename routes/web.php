@@ -22,7 +22,7 @@ Route::get('/dashboard', function () {
 Route::get('/user', function () {
     return view('users');
 });
-Route::get('/databarang', "DatabarangnController@index");
+Route::get('/databarang', "DatabarangnController@index")->name("databarang");
 
 Route::get('/dataruangan', function () {
     return view('dataruangan');
@@ -32,4 +32,6 @@ Route::get('/aturan', function () {
 });
  Route::get('/tambahdata', 'DataBarangnController@tambah');
  Route::post('/tambahdata/tambah', 'DataBarangnController@store');
- Route::get('/databarang/cari', 'DataBarangnController@barang');
+ Route::get('/databarang/{no}/edit','DataBarangnController@edit');
+ Route::post('/databarang/{no}','DataBarangnController@hapus')->name('delete');
+ Route::post('/barang/update', 'DataBarangnController@update')->name('update');
