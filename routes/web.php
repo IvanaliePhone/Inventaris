@@ -37,22 +37,8 @@ Route::get('/tambahdata', function () {
 Route::get('/dashboards', function () {
     return view('/dashboard');
 });
+Route::get('/level',[LevelController::class,'index']);
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/user', 'UserController@index')->name('user');
-
-Auth::routes();
-
-Route::get('/admin', 'AdminController@index')->name('admin');
-
-Auth::routes();
-
-Route::get('/superadmin', 'SuperadminController@index')->name('superadmin');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/superadmin', 'SuperadminController@index')->name('superadmin')->middleware('superadmin');
+Route::get('/user', 'UserController@index')->name('user')->middleware('user');
+Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');Route::get('/home', 'HomeController@index')->name('home');

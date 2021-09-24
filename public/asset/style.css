@@ -59,10 +59,10 @@
 .dropdown:hover>.dropdown-menu{
    
     display:flex;
-    background:black;
+    
 }
 .dropdown-menu a{
-    font-size: 5px;
+    font-size: 18px;
 }
 .list-group a{
     color:rgb(207, 193, 176);
@@ -241,8 +241,9 @@ ul li:hover a{
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
+      margin-top:0;
     transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
+
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -259,6 +260,17 @@ ul li:hover a{
  .card{
      margin-left:5em;
      width:60%;
+ }
+ #content-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:70vh;
+ }
+ #content-dashboard h2{
+
+    position: absolute;
+    transform: translate(-50%,-50%);
  }
 
  

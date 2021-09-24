@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+
+@section('content')
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -21,14 +23,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <body>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-  <div class="container-fluid mb-3">
-    
-    <a class="navbar-brand"><div class="sidebar-heading text-center  primary-text fs-2 fw-bold text-uppercase ">
-                    <i class="fas fa-user-secret me-2" ></i>Inventaris 
-                    </a>
-</div>
+        
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,10 +48,7 @@
         </li>
        
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
     </div>
   </div>
 </nav>
@@ -137,8 +129,12 @@
                 </div>
             </div>
          </div>
-         <div class="content-dashboard">
-
+         <div id="content-dashboard">
+          
+            <h2>Selamat Datang </h2>
+            <h2>Selamat Datang </h2>
          </div>
     </body>
 </html>
+
+@endsection

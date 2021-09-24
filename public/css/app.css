@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -42,7 +42,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -1094,6 +1093,7 @@ pre code {
   .col-md-8 {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
+    transform: translate(0%,30%);
   }
 
   .col-md-9 {
