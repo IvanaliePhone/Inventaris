@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dash');
 });
-Route::get('/user', function () {
+Route::get('/users', function () {
     return view('users');
 });
 Route::get('/databarang', "DatabarangnController@index")->name("databarang");
